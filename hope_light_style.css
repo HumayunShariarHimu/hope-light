@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+div {
+  width: 100%;
+  height: 700px;
+  background: url(/media/images/hope-light.png) no-repeat center;
+  background-size: contain;
+  transform: translate(0,0);
+  opacity: 0;
+  -webkit-animation: blink 2s infinite 2s none, vertical 1s ease-in-out infinite 2s alternate;
+  animation: blink 2s infinite 2s none, vertical 1s ease-in-out infinite 2s alternate;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes blink {
+  0% {opacity: .2;}
+  50% {opacity: 1;}
+  100% {opacity: .2;}
+}
+@keyframes blink {
+  0% {opacity: .2;}
+  50% {opacity: 1;}
+  100% {opacity: .2;}
+}
+
+@-webkit-keyframes vertical {
+  0% {transform:translateY(-5px);}
+  100% {transform:translateY(  0px);}
+}
+@keyframes vertical {
+  0% {transform:translateY(-5px);}
+  100% {transform:translateY(  0px);}
+}

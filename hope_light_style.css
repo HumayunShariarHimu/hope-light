@@ -10,7 +10,7 @@ body {
 div {
   width: 100%;
   height: 700px;
-  background: url(/media/images/hope-light.png) no-repeat center;
+  background: url(https://raw.githubusercontent.com/HumayunShariarHimu/hope-light/refs/heads/main/hope-light.png) no-repeat center;
   background-size: contain;
   transform: translate(0,0);
   opacity: 0;
